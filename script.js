@@ -35,20 +35,24 @@ $(document).ready(function() {
       $('#hours').text(t.hours);
       $('#mins').text(('0' + t.minutes).slice(-2));
       $('#secs').text(('0' + t.seconds).slice(-2));
-      if(t.total<=0){
+
+      console.log(t.total)
+      if(t.total<=6410000){
         clearInterval(timeinterval);
-        var now = new Date();
-        var yearStr = now.getFullYear().toString();
-        $('#header').text("Happy New Year!!!");
-        $('#days').text(yearStr[0]);
-        $('#days-text').text("Happy");
-        $('#hours').text(yearStr[1]);
-        $('#hours-text').text("New");
-        $('#mins').text(yearStr[2]);
-        $('#mins-text').text("Year");
-        $('#secs').text(yearStr[3]);
-        $('#secs-text').text("!!!");
-        $('#info').text("Countdown starts again tomorrow!");
+
+        // var now = new Date();
+        // var yearStr = now.getFullYear().toString();
+        // $('#header').text("Happy New Year!!!");
+        // $('#days').text(yearStr[0]);
+        // $('#days-text').text("Happy");
+        // $('#hours').text(yearStr[1]);
+        // $('#hours-text').text("New");
+        // $('#mins').text(yearStr[2]);
+        // $('#mins-text').text("Year");
+        // $('#secs').text(yearStr[3]);
+        // $('#secs-text').text("!!!");
+        // $('#info').text("Countdown starts again tomorrow!");
+        window.location.replace("https://ashcraler.github.io/fireworks.github.io/")
       }
     },1000);
   };
