@@ -37,7 +37,7 @@ $(document).ready(function() {
       $('#secs').text(('0' + t.seconds).slice(-2));
 
       console.log(t.total)
-      if(t.total<=6410000){
+      if(t.total<=0){
         clearInterval(timeinterval);
 
         // var now = new Date();
